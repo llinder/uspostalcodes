@@ -1,0 +1,20 @@
+#tagcloud .container {
+    width:500px; padding:5px;
+    overflow:auto;
+    border-style: solid;
+    border-collapse: #000000;
+    min-height: 40px;
+}
+#tagcloud .menu {
+    padding: 10px;
+}
+#tagcloud .container .spinner {
+    margin: auto;
+    top: 10px;
+}
+#taglist { text-align:center; margin:0; padding:0; }
+#taglist li {
+    list-style-type:none; float:left; margin:0 10px; height:35px;
+}
+#taglist li a { text-decoration:none; color:#ffffff; }
+#taglist li a:hover { text-decoration:underline; }

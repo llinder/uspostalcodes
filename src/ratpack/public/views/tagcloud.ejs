@@ -1,0 +1,16 @@
+<h4><a href="http://en.wikipedia.org/wiki/Tag_cloud">Tag cloud</a> of sorted US states weighted by number of postal codes.</h4>
+<div class="container">
+    <% if(!this.attr('counts')) { %>
+    <div <%= (el) -> el.spin('default')%>></div>
+    <% } else { %>
+    <ul id="taglist">
+        <% list(this.attr('counts'), function(item) { %>
+        <li <%= style(item) %>><%= item.name %></li>
+        <% }) %>
+    </ul>
+    <% } %>
+</div>
+<div class="menu">
+    <button class="clear">Clear</button>
+</div>
+
